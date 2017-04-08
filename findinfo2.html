@@ -5,31 +5,81 @@
     <title>Eugene Civic Engagment</title>
     <link rel="stylesheet" href=style.css" type="text.css">
   </head>
-  <body style="background-color: green">
+  
+  <body style="background-color: #d5ffc4">
     <div id="banner"> 
     <img src="EugeneImage.png">
-       <h1 class="BannerHeader">Welcome to the Home Page!!!</h1> 
-       <button class ="Button" onclick="parent.location='upVoting.html'">Up Voting Page</button>
-       <button class ="Button" onclick="parent.location='contactInfo.html'">Gov Contact Info</button>
-       <button class ="Button" onclick="parent.location='otherPage.html'">Other Page</button>
-       <button class ="Button" onclick="parent.location='index.html'">Home Page</button>
+       <h1 class="BannerHeader">Your Eugene</h1>
+   
+    </script> 
+       <style>
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#contactInfo">Your Government Rep</a>
+  <a href="#petitionForum">Petition Forum</a>
+  <a href="#communityCalendar">Community Calendar</a>
+  <a href="#petition">Start a Petition</a>
+</div>
+
+       
     </div>
     <style>
 button.accordion {
-    background-color: green;
+    background-color: #d5ffc4;
     color: black;
     cursor: pointer;
-    padding: 18px;
+    padding: 16px;
     width: 100%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 15px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd; 
+    background-color: #7f9875; 
+}
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 div.panel {
@@ -41,7 +91,7 @@ div.panel {
 </head>
 <body>
 
-<h2>Accordion</h2>
+<h2>Eugene Local Government Representatives</h2>
 
 <button class="accordion">Ward 1</button>
 <div class="panel">
@@ -98,8 +148,12 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+ <p> Don't know your ward? <a href="https://www.eugene-or.gov/532/Find-Your-Ward"> Find out here.</a> </p>
 </script>
-
+<div id="footer">
+        Copyright &copy; 2017 Brandt Chandler
+      </div>
 </body>
 </html>
+
 
